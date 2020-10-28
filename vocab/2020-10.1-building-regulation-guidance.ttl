@@ -14,8 +14,7 @@
 
 <http://buildvoc.co.uk/resource/> a owl:Ontology .
 
-:c_4cdc3b72 a skos:Concept;
-  skos:prefLabel "compartment wall or floor"@en .
+:c_3da44764 skos:narrower :c_08eb88d2, :c_7abc215a, :c_c53e946f .
 
 :c_79a3679f dc:source :c_6c82c09f .
 
@@ -37,8 +36,8 @@
   skos:broader :c_d4480e31;
   skos:definition "Presents the functional requirements for complying with fire safety in dwellings in the building regulations. The sections cover: B1 - Means of warning and escape, B2 - Internal fire spread (linings), B3 - Internal fire spread (structure), B4 - External fire spread and B5 - Access and facilities for the fire service. Also includes Regulations 6(3), 7(2) and 38. Approved Document B (fire safety) has been published in two volumes. Volume 1 deals with dwellings and blocks of flats and Volume 2 deals with all other types of building covered by the Building Regulations."@en;
   skos:example <https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/832631/Approved_Document_B__fire_safety__volume_1_-_2019_edition.pdf>;
-  skos:inScheme :conceptScheme_751925ed;
   dct:modified "2020-10-23T17:17:44.557Z"^^xsd:dateTime;
+  skos:inScheme :conceptScheme_751925ed;
   skos:prefLabel "fire safety - volume 1: dwellings. 2019 edition - for use in england"@en .
 
 :c_6d2c7baa a skos:Concept;
@@ -98,8 +97,8 @@
   skos:prefLabel "access room"@en .
 
 :c_da6168d8 dct:created "2019-12-12T20:41:23.654Z"^^xsd:dateTime;
-  dct:modified "2019-12-28T07:17:46.911Z"^^xsd:dateTime;
-  skos:broader :c_13911a49 .
+  skos:broader :c_13911a49;
+  skos:prefLabel "dwelling"@en-GB .
 
 :c_7fc5469b skos:definition "A space enclosed by elements of a building (including a suspended ceiling) or contained within an element, but that is not a room, cupboard, circulation space, protected shaft, or space within a flue, chute, duct, pipe or conduit."@en;
   skos:inScheme :conceptScheme_751925ed;
@@ -133,9 +132,6 @@
 :c_4a90e0e1 dct:created "2019-12-13T23:19:04.145Z"^^xsd:dateTime;
   skos:definition "A building or part of a building, comprising one or more rooms, spaces or storeys, that is constructed to prevent the spread of fire to or from another part of the same building or an adjoining building."@en .
 
-:c_13911a49 skos:narrower :c_056e5a0a, :c_10ea4ecc, :c_4cb80404, :c_4cdc3b72, :c_7d862abe,
-    :c_858351ef, :c_a4eaf123, :c_b3f65603 .
-
 :c_b2cab8d9 skos:inScheme :conceptScheme_751925ed .
 
 :c_4553c077 dct:created "2018-07-22T14:24:33.455Z"^^xsd:dateTime .
@@ -145,6 +141,9 @@
 :c_e7e6b110 dc:source :c_ca00c020 .
 
 :rdf:isPartOf dct:created "2018-03-29T13:50:40.287Z"^^xsd:dateTime .
+
+:c_13911a49 skos:narrower :c_056e5a0a, :c_10ea4ecc, :c_4cb80404, :c_7d862abe, :c_858351ef,
+    :c_a4eaf123, :c_b3f65603 .
 
 :skos:narrower a owl:Class;
   rdfs:subClassOf owl:Thing .
@@ -185,7 +184,7 @@
 :xl_en_96c8608e a skosxl:Label;
   skosxl:literalForm "loi"@en .
 
-:c_10c7fd62 dct:modified "2019-12-28T07:36:06.095Z"^^xsd:dateTime .
+:skosCollection_50d4bd2e skos:member :c_08eb88d2 .
 
 :c_3e5063e6 skos:definition "A storey with a floor that, at some point, is more than 1200mm below the highest level of ground beside the outside walls. (However, see Appendix B, paragraph B26c, for situations where the storey is considered to be a basement only because of a sloping site.)"@en;
   skos:inScheme :conceptScheme_751925ed .
@@ -399,14 +398,16 @@ A solar panel attached to an external wall."""@en .
 :c_d4480e31 a skos:Concept;
   dc:source "Building a Safer Future – Independent Review of Building Regulations and Fire Safety: Final Report"@en;
   dct:created "2018-03-28T19:09:47.835Z"^^xsd:dateTime;
-  rdfs:label "part b - fire safety"@en;
   rdfs:seeAlso <http://eprints.bimcoordinator.co.uk/id/eprint/11>;
   skos:broader :c_502a871c;
   skos:definition "Guidance on ways to comply with the fire safety requirements in Part B of Schedule 1 to the Building Regulations 2010"@en;
   skos:inScheme :conceptScheme_751925ed;
-  skos:prefLabel "part b - fire safety"@en;
-  skosxl:altLabel :xl_en_a28bbbe3;
-  skosxl:prefLabel :xl_en_4c2be103 .
+  skos:prefLabel "part b - fire safety"@en .
+
+:c_3da44764 skos:narrower :c_0af8118b, :c_58bdb729 .
+
+:skosCollection_50d4bd2e dct:modified "2020-10-27T17:17:05.529Z"^^xsd:dateTime;
+  skos:member :c_2689a172, :c_9243074f, :c_aae4241b, :c_cf85f340 .
 
 :c_c07e16c5 skos:inScheme :conceptScheme_751925ed .
 
@@ -455,7 +456,7 @@ A solar panel attached to an external wall."""@en .
 :xl_en_ecb8813d skosxl:literalForm "health"@en .
 
 :c_83464c52 dc:source :c_6c82c09f;
-  dct:modified "2019-12-28T06:46:32.538Z"^^xsd:dateTime .
+  skos:prefLabel "travel distance"@en-GB .
 
 :c_58df2af5 skos:broader :c_86cfaae6;
   skos:note "Requirements Regulations 4 and 6"@en .
@@ -470,22 +471,17 @@ A solar panel attached to an external wall."""@en .
 :c_132d79ca dct:created "2019-12-21T06:56:02.209Z"^^xsd:dateTime;
   skos:broader :c_13911a49 .
 
-:c_10030a9a dct:modified "2019-12-13T23:33:58.982Z"^^xsd:dateTime;
-  skos:broader :c_13911a49 .
+:c_10030a9a skos:broader :c_13911a49;
+  skos:prefLabel "boundary"@en-GB .
 
 :c_10c7fd62 a skos:Concept;
   dct:created "2018-03-29T10:24:08.502Z"^^xsd:dateTime;
+  dct:modified "2020-10-28T15:11:08.871Z"^^xsd:dateTime;
   rdfs:isDefinedBy <http://www.legislation.gov.uk/uksi/2010/2214/part/8/made>;
-  rdfs:label "information to be provided by the person carrying out work"@en;
   skos:broader :c_f9b32acf;
   skos:inScheme :conceptScheme_751925ed;
   skos:notation "part 08"@en;
-  skos:prefLabel "information to be provided by the person carrying out work"@en;
-  skosxl:prefLabel :xl_en_6a33b976 .
-
-:xl_en_6a33b976 a skosxl:Label;
-  dct:modified "2018-07-20T19:12:52.238Z"^^xsd:dateTime;
-  skosxl:literalForm "information to be provided by the person carrying out work"@en .
+  skos:prefLabel "information to be provided by the person carrying out work"@en .
 
 :c_727adfdb dc:source :c_6c82c09f;
   skos:broader :c_13911a49;
@@ -567,9 +563,9 @@ A solar panel attached to an external wall."""@en .
   skosxl:literalForm "part c - site preparation and resistance to contaminates and moisture"@en .
 
 :c_da6168d8 a skos:Concept;
+  dct:modified "2020-10-28T15:18:43.693Z"^^xsd:dateTime;
   skos:definition "Includes a dwellinghouse and a flat."@en;
-  skos:inScheme :conceptScheme_751925ed;
-  skos:prefLabel "dwelling"@en .
+  skos:inScheme :conceptScheme_751925ed .
 
 :c_9b7f9eb7 dc:source :c_ca00c020;
   skos:notation "B1"@en .
@@ -578,8 +574,8 @@ A solar panel attached to an external wall."""@en .
   skos:definition "The maximum aggregate plan perimeter, found by vertical projection onto a horizontal plane. (See Section 15 of Approved Document B Volume 2.)"@en .
 
 :c_a965ecce dc:source :c_6c82c09f;
-  dct:modified "2019-12-28T06:46:06.436Z"^^xsd:dateTime;
-  skos:notation "B2"@en .
+  skos:notation "B2"@en;
+  skos:prefLabel "perimeter (of a building)"@en-GB .
 
 :c_b0f3b4fb a skos:Concept;
   dc:source :c_ca00c020;
@@ -720,10 +716,10 @@ A solar panel attached to an external wall."""@en .
 :c_c02d4d7d skos:notation "*"@en .
 
 :c_83464c52 a skos:Concept;
+  dct:modified "2020-10-28T15:13:23.569Z"^^xsd:dateTime;
   skos:broader :c_13911a49;
   skos:definition "(unless otherwise specified, e.g. as in the case of flats) The distance that a person would travel from any point within the floor area to the nearest storey exit, determined by the layout of walls, partitions and fittings."@en;
-  skos:notation "B2"@en;
-  skos:prefLabel "travel distance"@en .
+  skos:notation "B2"@en .
 
 <http://buildvoc.co.uk/resource/> owl:imports <http://www.w3.org/ns/dcat> .
 
@@ -750,7 +746,7 @@ A solar panel attached to an external wall."""@en .
   dct:created "2019-12-21T06:34:39.568Z"^^xsd:dateTime;
   skos:broader :c_13911a49;
   skos:inScheme :conceptScheme_751925ed;
-  skos:prefLabel "separated part"@en .
+  skos:prefLabel "separated part"@en-GB .
 
 :c_64b1d307 a skos:Concept;
   skos:broader :c_f9b32acf;
@@ -806,7 +802,7 @@ A solar panel attached to an external wall."""@en .
 
 :c_9b7f9eb7 skos:definition "A lift with additional protection and with controls that enable it to be used by the fire and rescue service when fighting a fire. (See Section 15.)"@en .
 
-:c_88af4873 dct:modified "2019-12-28T06:44:59.815Z"^^xsd:dateTime .
+:c_88af4873 skos:prefLabel "firefighting lift (b2)"@en .
 
 :c_b2cab8d9 dct:created "2019-12-12T20:47:12.799Z"^^xsd:dateTime;
   dct:modified "2019-12-13T22:39:26.964Z"^^xsd:dateTime;
@@ -825,10 +821,10 @@ A solar panel attached to an external wall."""@en .
 
 :c_a965ecce a skos:Concept;
   dct:created "2019-12-12T20:47:00.103Z"^^xsd:dateTime;
+  dct:modified "2020-10-28T15:19:02.690Z"^^xsd:dateTime;
   skos:broader :c_13911a49;
   skos:definition "The maximum aggregate plan perimeter, found by vertical projection onto a horizontal plane. (See Section 15.)"@en;
-  skos:inScheme :conceptScheme_751925ed;
-  skos:prefLabel "perimeter (of a building)"@en .
+  skos:inScheme :conceptScheme_751925ed .
 
 :c_be34e7b3 dc:source :c_6c82c09f .
 
@@ -848,7 +844,8 @@ A solar panel attached to an external wall."""@en .
 :c_7fc5469b dct:created "2019-12-13T23:07:38.815Z"^^xsd:dateTime;
   skos:broader :c_13911a49 .
 
-:xl_en_4c2be103 a skosxl:Label .
+:skosCollection_50d4bd2e skos:member :c_366cf430, :c_547611a3, :c_6e741d9b, :c_c92ba3dc,
+    :c_fe309bb8 .
 
 :c_c83014a4 a skos:Concept;
   dct:created "2018-03-29T10:22:54.432Z"^^xsd:dateTime;
@@ -898,7 +895,8 @@ A solar panel attached to an external wall."""@en .
   skos:inScheme :conceptScheme_751925ed;
   skos:narrower :c_04c52352, :c_13543964, :c_228ee3b0, :c_727adfdb, :c_b0f3b4fb, :c_b6083e42,
     :c_bed063fd;
-  skos:prefLabel "appendix a: key terms"@en .
+  skos:prefLabel "appendix a: key terms (adb)"@en;
+  skos:narrower :c_7fc5469b .
 
 :xl_en_0460024f a skosxl:Label;
   skosxl:literalForm "part l - conservation of fuel and power"@en .
@@ -915,7 +913,7 @@ A solar panel attached to an external wall."""@en .
 
 :c_10030a9a a skos:Concept;
   dc:source :c_6c82c09f, :c_ca00c020;
-  skos:prefLabel "boundary"@en .
+  dct:modified "2020-10-28T15:19:35.891Z"^^xsd:dateTime .
 
 :c_c02d4d7d dc:source :c_6c82c09f, :c_ca00c020;
   skos:broader :c_13911a49;
@@ -969,18 +967,11 @@ A solar panel attached to an external wall."""@en .
 
 :c_f70bb786 a skos:Concept .
 
-:c_04c52352 dct:modified "2019-12-21T06:40:53.009Z"^^xsd:dateTime;
+:c_04c52352 dct:modified "2020-10-28T15:16:12.379Z"^^xsd:dateTime;
   skos:definition "(of a building) Part of a building that is separated from another part of the same building by a compartment wall. The wall runs the full height of the part and is in one vertical plane. (See Appendix D, Diagram D5.)"@en .
 
-:c_4cdc3b72 dct:created "2019-11-30T13:35:56.186Z"^^xsd:dateTime;
-  dct:isPartOf :c_ca00c020;
-  dct:source :c_ca00c020;
-  skos:broader :c_13911a49;
-  skos:definition "A fire resisting wall or floor to separate one fire compartment from another."@en;
-  dct:modified "2019-12-12T21:17:12.203Z"^^xsd:dateTime;
-  skos:inScheme :conceptScheme_751925ed;
-  skos:notation "B1"@en;
-  skos:note " NOTE: Provisions relating to construction are given in Section 7."@en .
+:c_3da44764 dct:modified "2020-10-27T17:16:15.520Z"^^xsd:dateTime;
+  skos:narrower :c_aae4241b, :c_cf85f340 .
 
 <http://buildvoc.co.uk/resource/> owl:imports <http://purl.org/dc/elements/1.1/>,
     <http://purl.org/dc/terms/> .
@@ -1069,7 +1060,7 @@ A solar panel attached to an external wall."""@en .
 
 :c_13911a49 skos:broader :c_6c82c09f;
   skos:narrower :c_10030a9a, :c_28013078, :c_28e7c922, :c_4a90e0e1, :c_5724a233, :c_5ef03467,
-    :c_79a3679f, :c_7fc5469b, :c_88af4873, :c_a965ecce, :c_b44f46e0, :c_b975b2d2, :c_c02d4d7d .
+    :c_79a3679f, :c_88af4873, :c_a965ecce, :c_b44f46e0, :c_b975b2d2, :c_c02d4d7d .
 
 :skosxl:hiddenLabel rdfs:subClassOf owl:Thing .
 
@@ -1113,7 +1104,8 @@ A solar panel attached to an external wall."""@en .
 
 :skosCollection_4ff8449c dct:created "2018-04-07T20:06:25.388Z"^^xsd:dateTime .
 
-:xl_en_a28bbbe3 a skosxl:Label .
+:skosCollection_50d4bd2e skos:member :c_0af8118b, :c_4775ba65, :c_58bdb729, :c_7abc215a,
+    :c_c984b189, :c_d996e4f9 .
 
 :c_e3cebf52 dct:created "2018-03-29T10:23:06.927Z"^^xsd:dateTime;
   rdfs:isDefinedBy <http://www.legislation.gov.uk/uksi/2010/2214/part/3/made> .
@@ -1141,15 +1133,12 @@ A solar panel attached to an external wall."""@en .
 :c_f70bb786 dct:created "2019-12-12T20:17:42.317Z"^^xsd:dateTime;
   skos:broader :c_13911a49;
   skos:definition "A fire resisting wall or floor to separate one fire compartment from another."@en;
-  skos:exactMatch :c_4cdc3b72;
   skos:inScheme :conceptScheme_751925ed;
   skos:notation "B2"@en;
   skos:note "NOTE: Provisions relating to construction are given in Section 8."@en;
   skos:prefLabel "compartment wall or floor"@en .
 
 :xl_en_d34f5762 skosxl:literalForm "P"@en .
-
-:c_f9b32acf skos:altLabel "the building regulations 2010"@en .
 
 :c_28e7c922 a skos:Concept;
   dct:created "2019-12-15T08:40:53.169Z"^^xsd:dateTime;
@@ -1235,8 +1224,6 @@ A solar panel attached to an external wall."""@en .
 :xl_en_8587f86b a skosxl:Label;
   skosxl:literalForm "part h - drainage and waste disposal"@en .
 
-:c_4cdc3b72 skos:exactMatch :c_f70bb786 .
-
 :xl_en_1333d9a7 a skosxl:Label;
   skosxl:literalForm """2.1.6
 """@en .
@@ -1264,10 +1251,10 @@ A solar panel attached to an external wall."""@en .
 
 :c_88af4873 a skos:Concept;
   dct:created "2019-12-12T20:43:47.043Z"^^xsd:dateTime;
+  dct:modified "2020-10-28T14:52:08.828Z"^^xsd:dateTime;
   skos:broader :c_13911a49;
   skos:definition "A lift with additional protection and with controls that enable it to be used by the fire and rescue service when fighting a fire. (See Section 17.)"@en;
-  skos:inScheme :conceptScheme_751925ed;
-  skos:prefLabel "firefighting lift"@en .
+  skos:inScheme :conceptScheme_751925ed .
 
 :c_9b7f9eb7 a skos:Concept;
   dct:created "2019-12-12T20:43:57.040Z"^^xsd:dateTime;
@@ -1341,7 +1328,7 @@ A solar panel attached to an external wall."""@en .
   skos:prefLabel "part k - protection from falling, collision and impact"@en;
   skosxl:prefLabel :xl_en_3e905d0b .
 
-:skosCollection_50d4bd2e skos:member :c_1d89066b, :c_2ca7a450 .
+:skosCollection_50d4bd2e skos:member :c_1d89066b, :c_2ca7a450, :c_8883ce73 .
 
 :c_f68328a2 a skos:Concept;
   dct:created "2018-03-28T19:11:07.411Z"^^xsd:dateTime;
@@ -1479,8 +1466,6 @@ A solar panel attached to an external wall."""@en .
 
 :c_7c12f560 dct:created "2019-12-21T06:14:37.859Z"^^xsd:dateTime .
 
-:xl_en_4c2be103 skosxl:literalForm "part b - fire safety"@en .
-
 :c_33c0e1b5 skos:prefLabel "common balcony"@en .
 
 :c_f70bb786 dc:source :c_6c82c09f .
@@ -1500,7 +1485,7 @@ A solar panel attached to an external wall."""@en .
 
 :c_c07e16c5 skos:prefLabel "free area"@en .
 
-:c_d4480e31 dct:modified "2020-10-23T17:06:41.749Z"^^xsd:dateTime .
+:skosCollection_50d4bd2e skos:member :c_c53e946f .
 
 :c_ca00c020 skos:topConceptOf :c_ca00c020 .
 
@@ -1549,7 +1534,7 @@ A solar panel attached to an external wall."""@en .
 :xl_en_93b6dba8 a skosxl:Label;
   skosxl:literalForm "part q - security"@en .
 
-:xl_en_a28bbbe3 skosxl:literalForm "approved document b"@en .
+:c_d4480e31 dct:modified "2020-10-28T15:11:21.052Z"^^xsd:dateTime .
 
 :c_56fef4b5 dc:source :c_ca00c020;
   skos:note "NOTE: Recessed car parking areas as shown in Diagram A1 should not be regarded as unprotected areas."@en .
@@ -1813,11 +1798,11 @@ A solar panel attached to an external wall."""@en .
   dc:rights :c_6c82c09f;
   dc:source :c_6c82c09f, :c_ca00c020;
   dct:created "2019-12-15T07:13:02.940Z"^^xsd:dateTime;
-  dct:modified "2019-12-15T07:54:23.601Z"^^xsd:dateTime;
+  dct:modified "2020-10-28T15:16:00.585Z"^^xsd:dateTime;
   skos:broader :c_13911a49;
   skos:definition "A room used, or intended to be used, for people to live in (including, for the purposes of Approved Document B Volumes 1 and 2, a kitchen, but not a bathroom)."@en;
   skos:inScheme :conceptScheme_751925ed;
-  skos:prefLabel "habitable room"@en .
+  skos:prefLabel "habitable room"@en-GB .
 
 :c_d8e990c2 a skos:Concept;
   dc:rights :c_6c82c09f;
@@ -1876,7 +1861,7 @@ In each case measure the visible area<li>b. Floor area:Room, garage, conservator
   skos:inScheme :conceptScheme_751925ed;
   skos:prefLabel "diagram d6 height of top storey in building"@en .
 
-:c_13911a49 dct:modified "2019-12-21T09:26:33.488Z"^^xsd:dateTime .
+:c_13911a49 dct:modified "2020-10-28T14:51:06.504Z"^^xsd:dateTime .
 
 :c_7d862abe dct:modified "2019-12-21T06:40:53.066Z"^^xsd:dateTime .
 
@@ -1910,17 +1895,8 @@ at: www.bsigroup.co.uk """@en;
   skos:inScheme :conceptScheme_751925ed;
   skos:prefLabel "bsi"@en .
 
-:c_74e1686f a skos:Concept;
-  dct:created "2020-10-14T06:53:51.915Z"^^xsd:dateTime;
-  dct:modified "2020-10-14T06:54:36.414Z"^^xsd:dateTime;
-  skos:broader :c_81ea9f13;
-  skos:definition """Materials include manufactured products such
-as components, fittings, items of equipment
-and systems; naturally occurring materials such
-as stone, timber and thatch; and backfilling for
-excavations in connection with building work."""@en;
-  skos:inScheme :conceptScheme_751925ed;
-  skos:prefLabel "materials"@en .
+:c_3da44764 skos:narrower :c_2689a172, :c_3454d214, :c_366cf430, :c_8883ce73, :c_9243074f,
+    :c_d996e4f9, :c_da4c39b1 .
 
 :c_a86611c3 a skos:Concept;
   dct:created "2020-10-14T06:58:19.971Z"^^xsd:dateTime;
@@ -2303,7 +2279,7 @@ acoustical terms are to be found in the relevant British Standards listed in Ann
 :c_86cfaae6 dct:modified "2020-10-23T16:52:59.669Z"^^xsd:dateTime;
   skos:narrower :c_58df2af5, :c_f232ec50 .
 
-:c_f9b32acf dct:modified "2020-10-23T17:11:34.205Z"^^xsd:dateTime;
+:c_f9b32acf dct:modified "2020-10-28T14:47:43.550Z"^^xsd:dateTime;
   skos:narrower :c_06f29df7, :c_37246cae, :c_9d708081 .
 
 :c_feba40b2 a skos:Concept;
@@ -2317,10 +2293,10 @@ account during any subsequent project"""@en;
 :skosCollection_50d4bd2e a skos:Collection;
   dct:created "2020-10-23T17:24:32.699Z"^^xsd:dateTime;
   skos:member :c_054f5d4e, :c_056e5a0a, :c_10030a9a, :c_10ea4ecc, :c_14b52896, :c_1a7ea9e5,
-    :c_1f1f7725, :c_228ee3b0, :c_25dbe396, :c_28013078, :c_28e7c922, :c_33c0e1b5, :c_34f295d5,
-    :c_13543964, :c_35d3a535, :c_362390fa, :c_38ba0f99, :c_3cae7829, :c_3d59dac9, :c_3e5063e6,
-    :c_46be855e, :c_47c790ae, :c_04c52352, :c_40560ccd, :c_48a520f8, :c_132d79ca, :c_49a5a923,
-    :c_4a90e0e1, :c_4aee7770, :c_4cb80404, :c_4cdc3b72, :c_5724a233, :c_5ef03467, :c_56fef4b5,
+    :c_1f1f7725, :c_228ee3b0, :c_25dbe396, :c_28013078, :c_28e7c922, :c_33c0e1b5, :c_3454d214,
+    :c_13543964, :c_34f295d5, :c_35d3a535, :c_362390fa, :c_38ba0f99, :c_3cae7829, :c_3d59dac9,
+    :c_3e5063e6, :c_46be855e, :c_04c52352, :c_40560ccd, :c_47c790ae, :c_132d79ca, :c_48a520f8,
+    :c_49a5a923, :c_4a90e0e1, :c_4aee7770, :c_4cb80404, :c_5724a233, :c_5ef03467, :c_56fef4b5,
     :c_43d8f455, :c_2618c4b3, :c_5fea650b, :c_3afc08f0, :c_586c25b3, :c_3736f311, :c_0c23af6b,
     :c_61f82d61, :c_040286d4, :c_6284471b, :c_12c07b97, :c_706598d3, :c_727adfdb, :c_7400b440,
     :c_774ecfdd, :c_778ca063, :c_7804ad6c, :c_79a3679f, :c_7a2d826e, :c_7b85eda3, :c_7c12f560,
@@ -2455,7 +2431,7 @@ account during any subsequent project"""@en;
   skos:broader :c_59a3ae21;
   skos:definition "is the physical property used to measure the airtightness of the building fabric. It is defined as air leakage rate per hour per square metre of envelope area at a test reference pressure differential across the building envelope of 50 Pascal (50 N/m2). The design air permeability is the target value set at the design stage."@en;
   skos:inScheme :conceptScheme_751925ed;
-  skos:prefLabel "air permeability"@en .
+  skos:prefLabel "air permeability"@en-GB .
 
 :c_e7b31cc5 dct:modified "2020-10-26T07:36:15.983Z"^^xsd:dateTime;
   a skos:Concept;
@@ -2560,9 +2536,9 @@ document:"""@en;
   skos:prefLabel "sanitation, hot water safety and water efficiency 2015 edition with 2016 amendments"@en .
 
 :c_373d0f37 a skos:Concept;
-  dct:modified "2020-10-26T07:35:27.876Z"^^xsd:dateTime;
+  dct:modified "2020-10-28T15:20:10.766Z"^^xsd:dateTime;
   skos:definition "is a space containing one or more water closets or urinals. Sanitary accommodation containing one or more cubicles counts as a single space if there is free circulation of air throughout the space."@en;
-  skos:prefLabel "sanitary accommodation"@en .
+  skos:prefLabel "sanitary accommodation"@en-GB .
 
 :c_7cf2b5eb a skos:Concept;
   dct:modified "2020-10-26T07:27:18.364Z"^^xsd:dateTime;
@@ -2598,7 +2574,7 @@ document:"""@en;
   dct:modified "2020-10-26T07:26:15.736Z"^^xsd:dateTime;
   skos:definition "is the pressure differential between inside and outside a building caused by differences in the density of the air due to an indoor/outdoor temperature difference."@en .
 
-:c_ac856c1e dct:modified "2020-10-26T07:31:51.631Z"^^xsd:dateTime .
+:c_ac856c1e dct:modified "2020-10-28T15:14:31.948Z"^^xsd:dateTime .
 
 :c_63df1a7b dct:modified "2020-10-26T07:20:56.289Z"^^xsd:dateTime .
 
@@ -2823,11 +2799,11 @@ document:"""@en;
   skos:prefLabel "separating floor"@en .
 
 :c_e43f1fcb a skos:Concept;
-  dct:modified "2020-10-25T04:28:20.895Z"^^xsd:dateTime;
+  dct:modified "2020-10-28T15:17:24.773Z"^^xsd:dateTime;
   skos:broader :c_f4cc0ec3;
   skos:definition "Wall that separates adjoining dwelling-houses, flats or rooms for residential purposes."@en;
   skos:inScheme :conceptScheme_751925ed;
-  skos:prefLabel "separating wall"@en .
+  skos:prefLabel "separating wall"@en-GB .
 
 :c_da4b364b a skos:Concept;
   dct:modified "2020-10-25T04:28:31.298Z"^^xsd:dateTime;
@@ -3041,7 +3017,7 @@ to and Regulation 7 of the Building Regulations
 :c_0822f77e a skos:Concept;
   skos:broader :c_90aedbdc;
   skos:definition "includes the erection or extension of a building, the provision or extension of a controlled service or ﬁtting in or in connection with a building, and the material alteration of a building, or a controlled service or ﬁtting."@en;
-  skos:prefLabel "building work"@en .
+  skos:prefLabel "building work"@en-GB .
 
 :c_39f68990 a skos:Concept;
   skos:broader :c_90aedbdc;
@@ -3123,11 +3099,11 @@ to and Regulation 7 of the Building Regulations
   skos:prefLabel "kitchen"@en .
 
 :c_47b084b0 a skos:Concept;
-  dct:modified "2020-10-26T07:34:46.172Z"^^xsd:dateTime;
+  dct:modified "2020-10-28T14:49:24.169Z"^^xsd:dateTime;
   skos:broader :c_90aedbdc;
   skos:definition "means an alteration which results in a building or a controlled service or ﬁtting not complying with, or being more, means of warning and escape, internal and external ﬁre spread, ﬁre service access and facilities, and access and use."@en;
   skos:inScheme :conceptScheme_751925ed;
-  skos:prefLabel "material alteration"@en .
+  skos:prefLabel "material alteration (adg)"@en .
 
 :c_ee888332 a skos:Concept;
   skos:broader :c_90aedbdc;
@@ -3424,7 +3400,7 @@ guidance on relevant requirements in the Building
 :c_3e30efaf a skos:Concept;
   skos:broader :c_152c4bbc;
   skos:definition "is a body that carries out checks for compliance with the Building Regulations on plans of building work and on the building work itself. The Building Control Body may be either the local authority or an Approved Inspector. For further details, see the manual to the Building Regulations."@en;
-  skos:prefLabel "building control body"@en .
+  skos:prefLabel "building control body"@en-GB .
 
 :c_8c3e4b6f a skos:Concept;
   skos:broader :c_152c4bbc;
@@ -3707,13 +3683,13 @@ guidance on relevant requirements in the Building
 :c_7f8af2c2 dct:modified "2020-10-26T07:41:01.784Z"^^xsd:dateTime;
   skos:inScheme :conceptScheme_751925ed .
 
-:c_3e30efaf dct:modified "2020-10-25T07:06:05.116Z"^^xsd:dateTime;
+:c_3e30efaf dct:modified "2020-10-28T15:17:13.392Z"^^xsd:dateTime;
   skos:inScheme :conceptScheme_751925ed .
 
 :c_ed23b7cc dct:modified "2020-10-26T07:43:47.723Z"^^xsd:dateTime;
   skos:inScheme :conceptScheme_751925ed .
 
-:c_0822f77e dct:modified "2020-10-26T07:32:45.968Z"^^xsd:dateTime;
+:c_0822f77e dct:modified "2020-10-28T15:15:03.177Z"^^xsd:dateTime;
   skos:editorialNote """Note: Terms shown with * are defined in
 legislation, either in the Building Act 1984 or the
 Building Regulations 2010, where the definition
@@ -3812,7 +3788,7 @@ buildings in Wales as defined in the Welsh Ministers (Transfer of Functions) (No
 :c_bf5868a2 a skos:Concept;
   skos:broader :c_b7d8c7ee;
   skos:definition "Serving more than one dwelling. "@en;
-  skos:prefLabel "common stair"@en .
+  skos:prefLabel "common stair (adk)"@en .
 
 :c_22ca257a a skos:Concept;
   skos:broader :c_b7d8c7ee;
@@ -3971,7 +3947,7 @@ buildings in Wales as defined in the Welsh Ministers (Transfer of Functions) (No
 :c_22ca257a dct:modified "2020-10-25T09:02:50.221Z"^^xsd:dateTime;
   skos:inScheme :conceptScheme_751925ed .
 
-:c_bf5868a2 dct:modified "2020-10-25T09:02:52.810Z"^^xsd:dateTime;
+:c_bf5868a2 dct:modified "2020-10-28T14:50:01.345Z"^^xsd:dateTime;
   skos:inScheme :conceptScheme_751925ed .
 
 :c_2d35a0e4 dct:modified "2020-10-26T07:30:16.215Z"^^xsd:dateTime;
@@ -4012,7 +3988,8 @@ buildings in Wales as defined in the Welsh Ministers (Transfer of Functions) (No
 :c_29cf7b46 dct:modified "2020-10-26T07:00:50.727Z"^^xsd:dateTime;
   skos:inScheme :conceptScheme_751925ed;
   skos:note """Note: Sub-paragraph c means that, for example, the presence of a small flat for a manager in a large non-domestic building does not result in the whole building being treated as a dwelling.
-Similarly, if a room is used as an office or utility space within a dwelling, that does not mean that the building should not be treated as a dwelling."""@en .
+Similarly, if a room is used as an office or utility space within a dwelling, that does not mean that the building should not be treated as a dwelling."""@en;
+  skos:broader :c_70908a07 .
 
 :c_f68328a2 skos:definition """* This approved document gives guidance for compliance with the Building Regulations for
 building work carried out in England. It also applies to building work carried out on excepted
@@ -4026,7 +4003,7 @@ regulations 25, 25A, 25B and 26."""@en;
   dct:created "2020-10-26T05:36:13.809Z"^^xsd:dateTime;
   skos:broader :c_e7aee361;
   skos:inScheme :conceptScheme_751925ed;
-  skos:narrower :c_4487e3fd, :c_2bb3748c, :c_4e2f4fd0;
+  skos:narrower :c_2bb3748c, :c_4487e3fd, :c_4e2f4fd0;
   skos:note "The following are key terms used in this document:"@en;
   skos:prefLabel "appendix a: key terms and abbreviations"@en .
 
@@ -4045,21 +4022,24 @@ regulations 25, 25A, 25B and 26."""@en;
   skos:prefLabel "air permeability"@en .
 
 :c_21b61df0 a skos:Concept;
-  dct:modified "2020-10-26T07:18:47.233Z"^^xsd:dateTime;
+  dct:modified "2020-10-28T15:16:56.596Z"^^xsd:dateTime;
   skos:broader :c_ae74ec82;
   skos:definition "is the worst allowable air permeability."@en;
   skos:inScheme :conceptScheme_751925ed;
-  skos:prefLabel "limiting air permeability"@en .
+  skos:prefLabel "limiting air permeability"@en-GB .
 
 :c_75d877dd a skos:Concept;
+  dct:modified "2020-10-26T07:44:00.398Z"^^xsd:dateTime;
   skos:broader :c_ae74ec82;
   skos:definition "is the target value set at the design stage, and must always be no worse than the limiting value."@en;
+  skos:inScheme :conceptScheme_751925ed;
   skos:prefLabel "design air permeability"@en .
 
 :c_c65780e9 a skos:Concept;
   dct:modified "2020-10-26T07:22:42.768Z"^^xsd:dateTime;
   skos:broader :c_ae74ec82;
   skos:definition "is the value used in establishing the DER and the DFEE rate, and is based on a specific measurement of the dwelling concerned or on measurements of other dwellings of the same dwelling type."@en;
+  skos:inScheme :conceptScheme_751925ed;
   skos:note "NOTE: The envelope area of a terraced house includes the party wall(s). The envelope area of a flat in a multiple-storey building includes the floors, walls and ceilings which are shared with adjacent flats."@en;
   skos:prefLabel "assessed air permeability"@en .
 
@@ -4149,11 +4129,11 @@ regulations 25, 25A, 25B and 26."""@en;
   skos:prefLabel "carbon dioxide"@en .
 
 :c_b9d06847 a skos:Concept;
-  dct:modified "2020-10-26T06:56:19.370Z"^^xsd:dateTime;
+  dct:modified "2020-10-28T15:19:52.989Z"^^xsd:dateTime;
   skos:broader :c_ae74ec82;
   skos:definition "The act of erecting a new dwelling is not a material change of use. Approved Document L1B applies where a dwelling is being created in an existing building as the result of a material change of use of all or part of the building."@en;
   skos:inScheme :conceptScheme_751925ed;
-  skos:prefLabel "material changes of use"@en .
+  skos:prefLabel "material changes of use"@en-GB .
 
 :c_ab063a87 a skos:Concept;
   dct:modified "2020-10-26T06:58:33.948Z"^^xsd:dateTime;
@@ -4169,43 +4149,13 @@ regulations 25, 25A, 25B and 26."""@en;
   skos:inScheme :conceptScheme_751925ed;
   skos:prefLabel "material changes of use"@en .
 
-:c_c8e10b9d a skos:Concept;
-  dct:modified "2020-10-26T06:50:25.717Z"^^xsd:dateTime;
-  skos:inScheme :conceptScheme_751925ed .
-
-:c_6c0c236a a skos:Concept;
-  dct:modified "2020-10-26T06:49:50.742Z"^^xsd:dateTime;
-  skos:inScheme :conceptScheme_751925ed .
-
-:c_8894f697 a skos:Concept;
-  dct:modified "2020-10-26T06:49:43.394Z"^^xsd:dateTime;
-  skos:inScheme :conceptScheme_751925ed .
-
-:c_d6b74a19 a skos:Concept;
-  dct:modified "2020-10-26T06:50:03.698Z"^^xsd:dateTime;
-  skos:inScheme :conceptScheme_751925ed .
-
-:c_893830f7 a skos:Concept;
-  dct:modified "2020-10-26T06:49:09.254Z"^^xsd:dateTime;
-  skos:inScheme :conceptScheme_751925ed .
-
-:c_5f87f054 a skos:Concept;
-  dct:modified "2020-10-26T06:49:47.344Z"^^xsd:dateTime;
-  skos:inScheme :conceptScheme_751925ed .
-
-:c_29cf7b46 a skos:Concept;
-  skos:broader :c_70908a07;
-  skos:definition "If a unit contains both living accommodation and space to be used for commercial purposes (e.g. as a workshop or office), the whole unit should be treated as a dwelling, as long as the commercial part can revert to domestic use. This can be the case if, for example: a. there is direct access between the commercial space and the living accommodation; and b. both are contained within the same thermal envelope; and c. the living accommodation occupies a substantial proportion of the total area of the unit."@en;
-  skos:prefLabel "live–work units"@en .
-
-:c_75d877dd dct:modified "2020-10-26T07:44:00.398Z"^^xsd:dateTime;
-  skos:inScheme :conceptScheme_751925ed .
-
-:c_c65780e9 skos:inScheme :conceptScheme_751925ed .
-
 :c_ae74ec82 skos:narrower :c_13c7985e, :c_1c9c5904, :c_21b61df0, :c_42f32053, :c_5ecea38f,
     :c_63561321, :c_63f653cb, :c_716e9379, :c_75d877dd, :c_9397feee, :c_96f4329c, :c_ab063a87,
     :c_c65780e9, :c_e3217f0c, :c_e382854e .
+
+:c_29cf7b46 a skos:Concept;
+  skos:definition "If a unit contains both living accommodation and space to be used for commercial purposes (e.g. as a workshop or office), the whole unit should be treated as a dwelling, as long as the commercial part can revert to domestic use. This can be the case if, for example: a. there is direct access between the commercial space and the living accommodation; and b. both are contained within the same thermal envelope; and c. the living accommodation occupies a substantial proportion of the total area of the unit."@en;
+  skos:prefLabel "live–work units"@en .
 
 :c_e7aee361 skos:prefLabel "l1a conservation of fuel and power 2013 edition incorporating 2016 amendments – for use in England*"@en .
 
@@ -4309,12 +4259,12 @@ Document as ‘the Building Regulations’."""@en;
   skos:prefLabel "specialist process lighting"@en .
 
 :c_06d9104f a skos:Concept;
-  dct:modified "2020-10-27T06:28:51.460Z"^^xsd:dateTime;
+  dct:modified "2020-10-28T15:16:24.235Z"^^xsd:dateTime;
   skos:broader :c_aca129a3;
   skos:definition "is the total area of all enclosed spaces measured to the internal face of the external walls. In this convention: a. a. the area of sloping surfaces such as staircases, galleries, raked auditoria and tiered terraces should be taken as their area on plan; and b. a. areas that are not enclosed such as open floors, covered ways and balconies are excluded."@en;
   skos:inScheme :conceptScheme_751925ed;
   skos:note "NOTE: This area is the gross floor area as measured in accordance with the guidance issued to surveyors by the Royal Institution of Chartered Surveyors (RICS)."@en;
-  skos:prefLabel "total useful floor area"@en .
+  skos:prefLabel "total useful floor area"@en-GB .
 
 :c_9e56cd49 a skos:Concept;
   dct:modified "2020-10-27T06:29:27.009Z"^^xsd:dateTime;
@@ -4661,11 +4611,11 @@ Document as ‘the Building Regulations’."""@en;
   skos:prefLabel "wheelchair adaptable"@en .
 
 :c_db39fc1a a skos:Concept;
-  dct:modified "2020-10-27T07:41:32.232Z"^^xsd:dateTime;
+  dct:modified "2020-10-28T15:18:11.490Z"^^xsd:dateTime;
   skos:broader :c_3cf43794;
   skos:definition "WC or bathroom compartment with tanking and drainage laid to fall to a connected gulley capable of draining the floor area when used as a shower."@en;
   skos:inScheme :conceptScheme_751925ed;
-  skos:prefLabel "wet room"@en .
+  skos:prefLabel "wet room"@en-GB .
 
 :c_b630c168 dct:modified "2020-10-27T07:40:31.921Z"^^xsd:dateTime;
   skos:inScheme :conceptScheme_751925ed .
@@ -4768,18 +4718,18 @@ Document as ‘the Building Regulations’."""@en;
   skos:prefLabel "accessible"@en .
 
 :c_9726335f a skos:Concept;
-  dct:modified "2020-10-27T08:25:26.584Z"^^xsd:dateTime;
+  dct:modified "2020-10-28T15:18:27.653Z"^^xsd:dateTime;
   skos:broader :c_e41ef2d9;
   skos:definition "when used to indicate the visual perception of one element of the building, or fitting within the building, against another means that the difference in light reflectance value between the two surfaces is greater than 30 points. Where illuminance on surfaces is greater than 200 lux, a difference in light reflectance value should be a minimum of 20 points. Where door opening furniture projects beyond the face of the door or otherwise creates enhanced differentiation and shade, a minimum difference in light reflectance value of 15 points is considered adequate. For further information, reference should be made to Colour, contrast and perception – Design guidance for internal built environments – Reading University."@en;
   skos:inScheme :conceptScheme_751925ed;
-  skos:prefLabel "contrast visually"@en .
+  skos:prefLabel "contrast visually"@en-GB .
 
 :c_ba5ca672 a skos:Concept;
-  dct:modified "2020-10-27T08:25:38.305Z"^^xsd:dateTime;
+  dct:modified "2020-10-28T15:15:34.118Z"^^xsd:dateTime;
   skos:broader :c_e41ef2d9;
   skos:definition "a stair intended for all users of a building on a day-to day- basis, as a normal route between levels."@en;
   skos:inScheme :conceptScheme_751925ed;
-  skos:prefLabel "general access stair"@en .
+  skos:prefLabel "general access stair"@en-GB .
 
 :c_9491fb8a a skos:Concept;
   dct:modified "2020-10-27T08:25:32.723Z"^^xsd:dateTime;
@@ -4789,11 +4739,11 @@ Document as ‘the Building Regulations’."""@en;
   skos:prefLabel "illuminance"@en .
 
 :c_563fcfe6 a skos:Concept;
-  dct:modified "2020-10-27T08:25:44.114Z"^^xsd:dateTime;
+  dct:modified "2020-10-28T15:19:18.273Z"^^xsd:dateTime;
   skos:broader :c_e41ef2d9;
   skos:definition "the total quantity of visible light reflected by a surface at all wavelengths and directions when illuminated by a light source."@en;
   skos:inScheme :conceptScheme_751925ed;
-  skos:prefLabel "light reflectance value (lrv)"@en .
+  skos:prefLabel "light reflectance value (lrv)"@en-GB .
 
 :c_add7f88a a skos:Concept;
   dct:modified "2020-10-27T08:25:35.781Z"^^xsd:dateTime;
@@ -4810,11 +4760,11 @@ Document as ‘the Building Regulations’."""@en;
   skos:prefLabel "usable"@en .
 
 :c_084501a5 a skos:Concept;
-  dct:modified "2020-10-27T08:25:23.800Z"^^xsd:dateTime;
+  dct:modified "2020-10-28T15:17:40.594Z"^^xsd:dateTime;
   skos:broader :c_e41ef2d9;
   skos:definition "a stair used for escape, access for maintenance, or purposes other than as a usual route for moving between levels on a day-to-day basis."@en;
   skos:inScheme :conceptScheme_751925ed;
-  skos:prefLabel "utility stair"@en .
+  skos:prefLabel "utility stair"@en-GB .
 
 :c_f31dbf5c skos:prefLabel "seasonal system energy efficiency ratio"@en .
 
@@ -4831,11 +4781,10 @@ Document as ‘the Building Regulations’."""@en;
 
 :c_63f863a5 a skos:Concept;
   dct:created "2020-10-27T08:41:20.704Z"^^xsd:dateTime;
-  dct:modified "2020-10-27T08:49:12.146Z"^^xsd:dateTime;
+  dct:modified "2020-10-28T14:45:34.435Z"^^xsd:dateTime;
   skos:broader :c_8100dcd2;
   skos:inScheme :conceptScheme_751925ed;
-  skos:narrower :c_1361b988, :c_63f863a5, :c_7c734287, :c_82b1caf3, :c_835978b6, :c_9f89ffaf,
-    :c_cca40edf;
+  skos:narrower :c_1361b988, :c_7c734287, :c_82b1caf3, :c_835978b6, :c_9f89ffaf, :c_cca40edf;
   skos:prefLabel "appendix a: key terms (adp)"@en .
 
 :c_cca40edf a skos:Concept;
@@ -4884,7 +4833,7 @@ Document as ‘the Building Regulations’."""@en;
 
 :skosCollection_50d4bd2e skos:member :c_1361b988, :c_15b9d927, :c_33cf3a6e, :c_33f8635d,
     :c_4e5f287b, :c_63f863a5, :c_67243ba7, :c_6eb9d2c5, :c_7c734287, :c_7f8ff8de, :c_82b1caf3,
-    :c_835978b6, :c_9f89ffaf, :c_ae0f295c, :c_c46bfd51, :c_cca40edf .
+    :c_835978b6, :c_9f89ffaf, :c_ae0f295c, :c_c46bfd51, :c_cca40edf, :c_da4c39b1 .
 
 :c_c66a31b4 a skos:Concept;
   dct:created "2020-10-27T16:08:22.110Z"^^xsd:dateTime;
@@ -5071,10 +5020,10 @@ Document as ‘the Building Regulations’."""@en;
   skos:prefLabel "approved inspectors regulations"@en .
 
 :c_33cf3a6e a skos:Concept;
+  dct:modified "2020-10-28T15:16:40.282Z"^^xsd:dateTime;
   skos:broader :c_a9fc7032;
   skos:definition "is generally any permanent or temporary building. A reference to a building includes a reference to part of a building. Buildings include dwellings (houses, flats) and public buildings."@en;
-  skos:inScheme :conceptScheme_751925ed;
-  skos:prefLabel "building"@en .
+  skos:inScheme :conceptScheme_751925ed .
 
 :c_77212558 a skos:Concept;
   skos:broader :c_a9fc7032;
@@ -5203,16 +5152,16 @@ Document as ‘the Building Regulations’."""@en;
   skos:prefLabel "renovation"@en .
 
 :c_a9823a22 a skos:Concept;
+  dct:modified "2020-10-28T15:21:20.969Z"^^xsd:dateTime;
   skos:broader :c_a9fc7032;
   skos:definition "is the person defined in article 3 of the Regulatory Reform (Fire Safety) Order 2005 and having the duties for compliance with the Order as prescribed in article 5."@en;
-  skos:inScheme :conceptScheme_751925ed;
-  skos:prefLabel "responsible person "@en .
+  skos:inScheme :conceptScheme_751925ed .
 
 :c_fad4ccd1 a skos:Concept;
+  dct:modified "2020-10-28T15:22:02.306Z"^^xsd:dateTime;
   skos:broader :c_a9fc7032;
   skos:definition "is a material that contributes to the thermal performance of a building’s thermal envelope, such as any element of a wall, floor or roof but not a door or window. Thermal element is defined in Regulation 2(3) of the Building Regulations."@en;
-  skos:inScheme :conceptScheme_751925ed;
-  skos:prefLabel "thermal element "@en .
+  skos:inScheme :conceptScheme_751925ed .
 
 :c_d4970b41 skos:inScheme :conceptScheme_751925ed .
 
@@ -5250,10 +5199,7 @@ Document as ‘the Building Regulations’."""@en;
   skos:broader :c_37246cae;
   skos:inScheme :conceptScheme_751925ed;
   skos:prefLabel "glossary of acronyms and terms"@en;
-  skos:narrower :c_fe309bb8, :c_547611a3, :c_c92ba3dc, :c_4775ba65, :c_c984b189, :c_0af8118b,
-    :c_58bdb729, :c_3454d214, :c_d996e4f9, :c_da4c39b1, :c_9243074f, :c_366cf430, :c_8883ce73,
-    :c_2689a172, :c_7abc215a, :c_c53e946f, :c_08eb88d2, :c_aae4241b, :c_cf85f340;
-  dct:modified "2020-10-27T17:16:15.520Z"^^xsd:dateTime .
+  skos:narrower :c_fe309bb8, :c_547611a3, :c_c92ba3dc, :c_4775ba65, :c_c984b189 .
 
 :c_fe309bb8 a skos:Concept;
   skos:broader :c_3da44764;
@@ -5274,10 +5220,11 @@ Document as ‘the Building Regulations’."""@en;
   skos:prefLabel "construction (design and management) regulations 2007"@en .
 
 :c_c92ba3dc a skos:Concept;
+  dct:modified "2020-10-28T15:17:58.161Z"^^xsd:dateTime;
   skos:broader :c_3da44764;
   skos:inScheme :conceptScheme_751925ed;
   skos:notation "CDM 2015 "@en;
-  skos:prefLabel "construction (design and management) regulations 2015"@en .
+  skos:prefLabel "construction (design and management) regulations 2015"@en-GB .
 
 :c_4775ba65 a skos:Concept;
   skos:broader :c_3da44764;
@@ -5304,10 +5251,11 @@ Document as ‘the Building Regulations’."""@en;
   skos:prefLabel "leadership and worker involvement toolkit"@en .
 
 :c_aae4241b a skos:Concept;
+  dct:modified "2020-10-28T15:21:51.311Z"^^xsd:dateTime;
   skos:broader :c_3da44764;
   skos:definition "management of health and safety at work regulations 1999"@en;
   skos:inScheme :conceptScheme_751925ed;
-  skos:prefLabel "the management regulations "@en .
+  skos:prefLabel "the management regulations"@en .
 
 :c_3454d214 a skos:Concept;
   skos:broader :c_3da44764;
@@ -5334,16 +5282,18 @@ Document as ‘the Building Regulations’."""@en;
   skos:prefLabel "publicly available specification 91"@en .
 
 :c_366cf430 a skos:Concept;
+  dct:modified "2020-10-28T15:22:15.744Z"^^xsd:dateTime;
   skos:broader :c_3da44764;
   skos:definition "balancing the level of risk against the measures needed to control the real risk in terms of money, time or trouble. However, you do not need to take action if it would be grossly disproportionate to the level of risk (see www.gov.uk/risk/faq.htm for the most up-to-date explanation of what ‘reasonably practicable’ means.)"@en;
   skos:inScheme :conceptScheme_751925ed;
-  skos:prefLabel "reasonably practicable "@en .
+  skos:prefLabel "reasonably practicable"@en .
 
 :c_8883ce73 a skos:Concept;
+  dct:modified "2020-10-28T15:21:08.210Z"^^xsd:dateTime;
   skos:broader :c_3da44764;
   skos:definition "areas outside the territorial sea designated for the exploration or exploitation of energy from water or winds (see section 84 of the Energy Act 2004)."@en;
   skos:inScheme :conceptScheme_751925ed;
-  skos:prefLabel "renewable energy zone "@en .
+  skos:prefLabel "renewable energy zone"@en .
 
 :c_7abc215a a skos:Concept;
   skos:broader :c_3da44764;
@@ -5352,10 +5302,11 @@ Document as ‘the Building Regulations’."""@en;
   skos:prefLabel "should"@en .
 
 :c_c53e946f a skos:Concept;
+  dct:modified "2020-10-28T15:20:41.020Z"^^xsd:dateTime;
   skos:broader :c_3da44764;
   skos:definition "not necessarily those that involve the greatest risks, but those (including health risks) that are not likely to be obvious, are unusual, or likely to be difficult to manage effectively."@en;
   skos:inScheme :conceptScheme_751925ed;
-  skos:prefLabel "significant risks "@en .
+  skos:prefLabel "significant risks"@en .
 
 :c_2689a172 a skos:Concept;
   skos:broader :c_3da44764;
@@ -5364,18 +5315,21 @@ Document as ‘the Building Regulations’."""@en;
   skos:prefLabel "safety schemes in procurement"@en .
 
 :c_08eb88d2 a skos:Concept;
+  dct:modified "2020-10-28T15:21:36.143Z"^^xsd:dateTime;
   skos:broader :c_3da44764;
   skos:definition "means the belt of waters extending from the coast of Great Britain up to 12 nautical miles."@en;
   skos:inScheme :conceptScheme_751925ed;
-  skos:prefLabel "territorial sea "@en .
+  skos:prefLabel "territorial sea"@en .
 
 :c_cf85f340 a skos:Concept;
+  dct:modified "2020-10-28T15:20:54.369Z"^^xsd:dateTime;
   skos:broader :c_3da44764;
   skos:definition "Workplace (Health, Safety and Welfare) Regulations 1992."@en;
   skos:inScheme :conceptScheme_751925ed;
-  skos:prefLabel "workplace regulations "@en .
+  skos:prefLabel "workplace regulations"@en .
 
-:skosCollection_50d4bd2e dct:modified "2020-10-27T17:17:05.529Z"^^xsd:dateTime;
-  skos:member :c_08eb88d2, :c_0af8118b, :c_2689a172, :c_3454d214, :c_366cf430, :c_4775ba65,
-    :c_547611a3, :c_58bdb729, :c_6e741d9b, :c_7abc215a, :c_8883ce73, :c_9243074f, :c_aae4241b,
-    :c_c53e946f, :c_c92ba3dc, :c_c984b189, :c_cf85f340, :c_d996e4f9, :c_da4c39b1, :c_fe309bb8 .
+:c_33cf3a6e skos:prefLabel "building"@en-GB .
+
+:c_a9823a22 skos:prefLabel "responsible person"@en .
+
+:c_fad4ccd1 skos:prefLabel "thermal element"@en .
